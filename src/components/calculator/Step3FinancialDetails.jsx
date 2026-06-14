@@ -166,7 +166,7 @@ export default function Step3FinancialDetails({ formData, updateFormData, onBack
                 type="text"
                 value={formData.coBorrowerName || ''}
                 onChange={e => updateFormData({ coBorrowerName: e.target.value })}
-                placeholder="e.g.Mizanur Rahman"
+                placeholder="e.g.John Doe"
                 style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: 8, padding: '10px 13px', fontSize: 13.5, outline: 'none', fontFamily: 'Inter,sans-serif', boxSizing: 'border-box' }}
                 onFocus={e => { e.target.style.borderColor = '#1a4d3a'; e.target.style.boxShadow = '0 0 0 3px rgba(26,77,58,0.12)'; }}
                 onBlur={e => { e.target.style.borderColor = '#d1d5db'; e.target.style.boxShadow = 'none'; }}

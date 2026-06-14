@@ -48,7 +48,7 @@ export default function Step2PropertyDetails({ formData, updateFormData, onNext,
     <form onSubmit={handleSubmit(onSubmit)}>
       <div style={{ marginBottom: 16 }}>
         <label style={labelStyle}>Property Street Address</label>
-        <input {...register('propertyStreetAddress')} placeholder="e.g.Bondor,Modonpur"
+        <input {...register('propertyStreetAddress')} placeholder="e.g. 123 Main St"
           style={inputStyle(!!errors.propertyStreetAddress)}
           onFocus={e => { e.target.style.borderColor = '#1a4d3a'; e.target.style.boxShadow = '0 0 0 3px rgba(26,77,58,0.12)'; }}
           onBlur={e => { e.target.style.borderColor = errors.propertyStreetAddress ? '#f87171' : '#d1d5db'; e.target.style.boxShadow = 'none'; }}
@@ -58,7 +58,7 @@ export default function Step2PropertyDetails({ formData, updateFormData, onNext,
 
       <div style={{ marginBottom: 20 }}>
         <label style={labelStyle}>City</label>
-        <input {...register('city')} placeholder="e.g.Bondor"
+        <input {...register('city')} placeholder="e.g.Austin"
           style={inputStyle(!!errors.city)}
           onFocus={e => { e.target.style.borderColor = '#1a4d3a'; e.target.style.boxShadow = '0 0 0 3px rgba(26,77,58,0.12)'; }}
           onBlur={e => { e.target.style.borderColor = errors.city ? '#f87171' : '#d1d5db'; e.target.style.boxShadow = 'none'; }}

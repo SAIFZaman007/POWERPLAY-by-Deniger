@@ -76,7 +76,7 @@ export default function Step1ContactDetails({ formData, updateFormData, onNext }
 
       <div style={{ marginBottom: 16 }}>
         <label style={labelStyle}>Email Address</label>
-        <input {...register('email')} type="email" placeholder="e.g.mizanur.rahman123@gmail.com"
+        <input {...register('email')} type="email" placeholder="e.g.example@gmail.com"
           style={inputStyle(!!errors.email)}
           onFocus={e => { e.target.style.borderColor = '#1a4d3a'; e.target.style.boxShadow = '0 0 0 3px rgba(26,77,58,0.12)'; }}
           onBlur={e => { e.target.style.borderColor = errors.email ? '#f87171' : '#d1d5db'; e.target.style.boxShadow = 'none'; }}
