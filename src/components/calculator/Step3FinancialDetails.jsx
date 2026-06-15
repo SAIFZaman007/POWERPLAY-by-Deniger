@@ -236,7 +236,7 @@ export default function Step3FinancialDetails({ formData, updateFormData, onBack
           {isSubmitting ? (
             <><span style={{ width: 14, height: 14, border: '2px solid rgba(255,255,255,0.3)', borderTopColor: '#fff', borderRadius: '50%', display: 'inline-block', animation: 'spin 0.7s linear infinite' }} /> Submitting...</>
           ) : (
-            <><Send size={14} /> Request Free ConsLAtation</>
+            <><Send size={14} /> Get Free Consultation</>
           )}
         </button>
       </div>
