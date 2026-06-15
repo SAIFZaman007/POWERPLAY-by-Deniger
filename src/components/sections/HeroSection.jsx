@@ -163,7 +163,7 @@ export default function HeroSection() {
             style={{ display: 'flex', gap: 36, flexWrap: 'wrap' }}
           >
             {[
-              { value: '20+', label: 'Years Experience' },
+              { value: '30+', label: 'Years Experience' },
               { value: '500+', label: 'Families Helped' },
               { value: 'A+', label: 'BBB Rating' },
             ].map(({ value, label }) => (

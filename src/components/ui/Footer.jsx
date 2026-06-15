@@ -24,7 +24,7 @@ export default function Footer() {
 
           {/* Brand column */}
           <div style={{ gridColumn: 'span 2' }}>
-            <img src="/logo.png" alt="Power Play Mortgage" style={{ height: 44, width: 'auto', marginBottom: 16, filter: 'brightness(0) invert(1)' }} />
+            <img src="/logo.png" alt="Power Play Mortgage" style={{ height: 70, width: 'auto', marginBottom: 16, filter: 'brightness(0) invert(1)' }} />
             <p style={{ fontSize: 13.5, color: '#9ca3af', lineHeight: 1.7, maxWidth: 320, marginBottom: 20 }}>
               Powerplay Mortgage is a premier independent reverse mortgage consulting platform. We bridge senior homeowners with government-insured HUD products, certified agents, and personalized educational advice.
             </p>
@@ -68,32 +68,59 @@ export default function Footer() {
               Get free reverse mortgage education delivered to your inbox.
             </p>
             {sent ? (
-              <p style={{ fontSize: 13, color: '#4ade80', fontWeight: 600 }}>✓ Subscribed! Thank you.</p>
+              <p style={{ fontSize: 13, color: '#4ade80', fontWeight: 600 }}>✓ Subscribed! Thank you!! </p>
             ) : (
               <form onSubmit={handleSubscribe}>
-                <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
-                    placeholder="Your Email Id"
-                    style={{ flex: 1, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 7, padding: '10px 12px', fontSize: 13, color: '#fff', outline: 'none', fontFamily: 'Inter,sans-serif' }}
-                  />
-                  <button type="submit" style={{ background: '#1a4d3a', color: '#fff', border: 'none', borderRadius: 7, padding: '10px 15px', fontSize: 13, fontWeight: 600, cursor: 'pointer', whiteSpace: 'nowrap', fontFamily: 'Inter,sans-serif' }}>
-                    Subscribe
-                  </button>
-                </div>
-                <p style={{ fontSize: 11, color: '#6b7280', display: 'flex', alignItems: 'center', gap: 5, margin: 0 }}>
-                  <Shield size={10} /> Your email is safe with us, we don't spam. Privacy Policy
-                </p>
-              </form>
+  {/* Changed display configuration to stack components vertically */}
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 12 }}>
+    <input
+      type="email"
+      value={email}
+      onChange={e => setEmail(e.target.value)}
+      placeholder="Your email..."
+      style={{ 
+        width: '100%', // Ensures it fills the column width cleanly
+        background: 'rgba(255,255,255,0.08)', 
+        border: '1px solid rgba(255,255,255,0.15)', 
+        borderRadius: 7, 
+        padding: '10px 12px', 
+        fontSize: 13, 
+        color: '#fff', 
+        outline: 'none', 
+        fontFamily: 'Inter,sans-serif',
+        boxSizing: 'border-box'
+      }}
+    />
+    <button 
+      type="submit" 
+      style={{ 
+        width: '100%', // Spans matching the input layout width
+        background: '#1a4d3a', 
+        color: '#fff', 
+        border: 'none', 
+        borderRadius: 7, 
+        padding: '10px 15px', 
+        fontSize: 13, 
+        fontWeight: 600, 
+        cursor: 'pointer', 
+        whiteSpace: 'nowrap', 
+        fontFamily: 'Inter,sans-serif' 
+      }}
+    >
+      Subscribe
+    </button>
+  </div>
+  <p style={{ fontSize: 11, color: '#6b7280', display: 'flex', alignItems: 'center', gap: 5, margin: 0 }}>
+    <Shield size={50} /> Your email is safe with us, we don't spam.
+  </p>
+</form>
             )}
 
             {/* HUD Equal Housing badge */}
             <div style={{ marginTop: 20, display: 'flex', alignItems: 'center', gap: 10 }}>
-              <div style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 8, padding: '8px 12px', textAlign: 'center' }}>
+              {/* <div style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 8, padding: '8px 12px', textAlign: 'center' }}>
                 <p style={{ fontSize: 9, fontWeight: 700, color: '#fff', letterSpacing: '0.06em', lineHeight: 1.3, margin: 0 }}>EQUAL HOUSING<br />LENDER</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
