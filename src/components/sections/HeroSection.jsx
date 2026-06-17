@@ -163,9 +163,8 @@ export default function HeroSection() {
             style={{ display: 'flex', gap: 36, flexWrap: 'wrap' }}
           >
             {[
-              { value: '30+', label: 'Years Experience' },
-              { value: '500+', label: 'Families Helped' },
-              { value: 'A+', label: 'BBB Rating' },
+              { value: '20+', label: 'Years Experience' },
+              { value: 'NMLS #236592', label: 'Licensed Reversed Mortgage Professional and Specialist' },
             ].map(({ value, label }) => (
               <div key={label} style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                 <span style={{ fontFamily: 'Montserrat,sans-serif', fontWeight: 900, fontSize: 28, color: '#fff', lineHeight: 1 }}>

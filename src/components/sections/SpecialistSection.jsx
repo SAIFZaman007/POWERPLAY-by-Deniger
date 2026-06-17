@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Phone, CheckCircle2 } from 'lucide-react';
 
 const CREDENTIALS = [
-  '30+ Years of Reverse Mortgage Experience',
+  '20+ Years of Reverse Mortgage Experience',
   'Federally Licensed HUD / FHA HECM Specialist',
   'Personalized, No-Pressure Consultations',
   'Hundreds of Families Served Across the U.S.',
