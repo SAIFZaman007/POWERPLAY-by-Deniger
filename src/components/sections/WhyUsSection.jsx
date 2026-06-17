@@ -2,14 +2,13 @@ import { motion } from 'framer-motion';
 import { Shield, MapPin, User, Briefcase, HeartHandshake } from 'lucide-react';
 
 const REASONS = [
-  { icon: Shield,         title: 'BBB Accredited (A+ Rated)',     description: 'We hold an A+ rating with the Better Business Bureau — a mark of transparency, integrity, and commitment to fair practices.' },
   { icon: MapPin,         title: 'Local Reverse Mortgage Expert',  description: 'Craig is embedded in your community. He understands local market conditions and provides guidance tailored to your area.' },
   { icon: User,           title: 'Personalized Guidance',          description: 'Every household is unique. We provide clear, plain-English answers to ensure you choose a HECM structure that aligns perfectly with your goals.' },
   { icon: Briefcase,      title: 'Trusted Industry Experience',    description: 'With over two decades of reverse lending focus, we\'ve helped thousands of retirees unlock peaceful paths in retirement.' },
   { icon: HeartHandshake, title: 'Customer-Focused Service',       description: 'Craig is embedded in your community. He understands local market conditions and provides guidance tailored to your area.' },
 ];
 
-const BADGES = ['HUD Approved Lender', 'NMLS Member', 'BBB Accredited A+', 'FHA Insured Loans', 'Licensed in All 50 States'];
+const BADGES = ['HUD Approved Lender', 'NMLS Member', 'FHA Insured Loans', 'Licensed in All 50 States'];
 
 export default function WhyUsSection() {
   return (
@@ -30,7 +29,7 @@ export default function WhyUsSection() {
         </div>
 
         {/* Cards grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 20, marginBottom: 48 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 20, marginBottom: 48 }}>
           {REASONS.map(({ icon: Icon, title, description }, i) => (
             <motion.div
               key={title}

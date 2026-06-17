@@ -128,7 +128,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: 24, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px 20px' }}>
-            {['HUD Approved Lender', 'NMLS Member', 'BBB Accredited A+', 'FHA Insured Loans', 'Licensed in All 50 States'].map(b => (
+            {['HUD Approved Lender', 'NMLS Member', 'FHA Insured Loans', 'Licensed in All 50 States'].map(b => (
               <span key={b} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: '#6b7280' }}>
                 <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#1a4d3a', flexShrink: 0 }} />
                 {b}

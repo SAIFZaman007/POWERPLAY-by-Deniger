@@ -45,7 +45,7 @@ export async function generatePamphletPDF(lead) {
 
   doc.setFontSize(8);
   setColor(GOLD, false);
-  text('HUD Insured  •  NMLS Member  •  BBB Accredited A+  •  Licensed in All 50 States', MARGIN, 38);
+  text('HUD Insured  •  NMLS Member  •  Licensed in All 50 States', MARGIN, 38);
 
   y = 58;
 
